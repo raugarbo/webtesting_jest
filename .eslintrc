@@ -1,9 +1,9 @@
 {
   "root": true,
 
-  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "extends": ["eslint:recommended", "plugin:prettier/recommended", "plugin:jest/recommended"],
 
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "jest"],
 
   "env": {
     "browser": true,
