@@ -1,6 +1,6 @@
 export class BankClient {
-  constructor() {
-    this.balanceStore = new BalanceStore();
+  constructor(store) {
+    this.balanceStore = store;
     this.balance = this.balanceStore.load();
   }
   deposit(amount) {
@@ -13,12 +13,12 @@ export class BankClient {
   }
 }
 
-export class BalanceStore {
-  static store = 0;
-  load() {
-    return BalanceStore.store;
-  }
-  save(store) {
-    BalanceStore.store = store;
-  }
-}
+// export class BalanceStore {
+//   static store = 0;
+//   load() {
+//     return BalanceStore.store;
+//   }
+//   save(store) {
+//     BalanceStore.store = store;
+//   }
+// }
